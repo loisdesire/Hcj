@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+    <form action="#" method="post" class="contact-form">
+        <div class="name">
+
+<!-----------------------------First and last name------------------------------>
+
+            <div class="content"> 
+                <label for="firstname">First name:</label><br>
+                <input type="text" id="firstname" name="firstname" required>
+                <small class="error-message">This field is required</small>
+            </div>
+        
+            <div class="content">
+                <label for="lastname">Last name:</label><br>
+                <input type="text" id="lastname" name="lastname" required>
+                <small class="error-message">This is a required field</small>
+            </div>
+        </div>
+
+<!-----------------------------Email address------------------------------>
+
+            <div class="content">
+             <label for="email">Email address:</label><br>
+             <input type="email" id="email" name="email" required>
+             <small class="error-message">Enter a valid email address</small>
+            </div>
+     
+<!-----------------------------Query type------------------------------>
+<div class="content">
+    <label for="querytype">Qurey type</label><br>
+
+    <div class="radiobutton">
+          <div class="radio1">
+            <input type="radio" id="generalenquiry" name="querytype" value="General Enquiry" required>
+            <label for="generalenquiry">General Enquiry</label>
+            </div>
+
+            <div class="radio2">
+            <input type="radio" id="supportrequest" name="querytype" value="Support Request">
+            <label for="supportrequest" class="supportrequest">Support Request</label>
+        </div>
+        <small class="error-message">Please select a query type</small>
+       </div>
+
+</div>
+            
+<!-----------------------------Message------------------------------>
+
+            <div class="content">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder="Write your message here"></textarea>
+                <small class="error-message">This field is required</small>
+            </div>
+
+<!-----------------------------Consent------------------------------>
+
+            <div class="content">
+                <input type="checkbox" id="consent" name="consent">
+                <label for="consent">I consent to being contacted by the team</label>
+            </div>
+
+
+<!-----------------------------Submit button------------------------------>
+
+            <button type="submit" class="submit">Submit</button>
+    </form>   
+    </div>
+
+    <script src="inter.js"></script>
+
+</body>
+</html>

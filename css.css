@@ -1,0 +1,141 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body
+{
+    background-color: hsl(148, 38%, 91%);
+    font-family: 'Karla';
+    height: 100vh;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.container
+{
+    background-color: hsl(0, 0%, 100%);
+    width: 600px;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+h1
+{
+   color: hsl(187, 24%, 22%);
+   font-size: 24;
+   margin-bottom: 20px;
+   text-align: center;
+}
+
+.content{
+    margin-bottom: 15px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+
+}
+
+input[type="text"]{
+  width: 200px;
+  padding: 10px;
+  border: 1px solid hsl(186, 15%, 59%);
+  border-radius: 5px;
+}
+
+input[type=email],textarea{
+    width: 450px;
+    padding: 10px;
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 5px;
+}
+
+input[type="radio"]{
+    padding: 10px;
+    border: 1px solid hsl(186, 15%, 59%);
+    margin-right: 5px;
+}
+
+.radiobutton{
+    gap: 10px;
+    display: flex;
+    font-size: 16px;
+}
+
+textarea{
+    height: 100px;
+}
+
+.name{
+    display: flex;
+    gap: 20px;
+}
+
+.radio1{
+border: black solid 1px;
+border-radius: 5px;
+padding: 8px 50px 8px 15px;
+}
+.radio2{
+  border: black solid 1px;
+  border-radius: 5px;
+  padding: 8px 60px 8px 50px;
+  }
+
+
+.error-message{
+    color: #E74C3C;
+    font-size: 12px;
+    display: none;
+}
+
+input:invalid ~ .error-message,
+textarea:invalid ~ .error-message {
+  display: block;
+}
+
+/* Submit Button */
+.submit {
+  padding: 10px 220px 10px 200px;
+  background-color: #1E7D41;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  
+}
+
+/* Hover and focused states */
+
+.submit:hover {
+  background-color: #155C32;
+}
+
+input[type="text"]:hover,input[type=email]:hover,textarea:hover
+{
+    background-color: #f7f7f7;
+}
+
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+  .form-row {
+    display: flex;
+    gap: 15px;
+  }
+
+  .form-group {
+    flex: 1;
+  }
+}
